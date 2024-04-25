@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shell</title>
+    <script src="http://localhost:3001/bundle.js"></script>
+    <script src="http://localhost:3002/bundle.js"></script>
+  </head>
+  <body>
+    <h1>애플리케이션 루트</h1>
+    <nav>
+      <ul>
+        <li><a href="/">home</a></li>
+        <li><a href="/jobs">jobs</a></li>
+      </ul>
+    </nav>
+    <div id="app">
+      <!-- <home-component></home-component>
+      <jobs-component></jobs-component> -->
+    </div>
+    <script type="text/javascript">
+      const webComponentsByRoutes = {
+        "/": "home-component",
+        "/jobs": "jobs-component",
+      };
+
+      const webComponentType = webComponentsByRoutes[window.location.pathname];
+
+      const root = document.getElementById("app");
+      const webComponent = document.createElement(webComponentType);
+      root.appendChild(webComponent);
+    </script>
+  </body>
+</html>
