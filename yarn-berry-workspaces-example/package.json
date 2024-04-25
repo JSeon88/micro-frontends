@@ -1,0 +1,10 @@
+{
+  "name": "yarn-berry-workspaces-example",
+  "packageManager": "yarn@4.1.1",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "echo \"root\""
+  }
+}
