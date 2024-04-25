@@ -1,0 +1,11 @@
+{
+  "name": "a",
+  "packageManager": "yarn@4.1.1",
+  "main": "index.js",
+  "dependencies": {
+    "b": "workspace:*"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
