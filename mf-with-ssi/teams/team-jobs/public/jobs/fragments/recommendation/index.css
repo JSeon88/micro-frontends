@@ -1,0 +1,30 @@
+#jobs-fragment-recommendation {
+  width: 400px;
+  height: 220px;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
+
+#jobs-fragment-recommendation h2 {
+  margin: 0;
+  padding: 20px;
+}
+
+#jobs-fragment-recommendation .recommendations {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+#jobs-fragment-recommendation .recommendations div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 20px;
+
+  background-color: black;
+  color: white;
+}
